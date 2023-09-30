@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 3D Car Animation Model </title>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=QNXMW3NgF3oq&format=png" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;800&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="page"
+        class="h-full bg-gradient-to-r from-transparent to-slate-200/30 bg-slate-200 text-slate-900 transition-colors duration-[2000ms] antialiased relative overflow-hidden select-none">
+
+        <div id="loading" class="absolute inset-0 z-50 bg-slate-200/80 flex items-center justify-center">
+            <svg class="animate-spin h-10 w-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2">
+                    <circle class="opacity-20" cx="12" cy="12" r="11" />
+                    <path d="m23 12c0 6.1-4.9 11-11 11" />
+                </g>
+            </svg>
+        </div>
+
+        <model-viewer class="absolute left-0 top-0 w-full h-full z-30 pointer-events-none"
+            src="https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/scene.gltf?v=1674149863924" exposure="1"
+            shadow-intensity="3" camera-orbit="0deg 10deg 20%" camera-target="-9.5m -8m 5m"></model-viewer>
+
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 z-0 pointer-events-none">
+            <div
+                class="title opacity-0 text-[clamp(200px,40vh,500px)] font-bold text-slate-900/5 opacity-0 pointer-events-none flex whitespace-nowrap will-change-transform">
+                <span class="mx-20">240K GT</span>
+                <span class="mx-20">240K GT</span>
+                <span class="mx-20">240K GT</span>
+                <span class="mx-20">240K GT</span>
+                <span class="mx-20">240K GT</span>
+                <span class="mx-20">240K GT</span>
+            </div>
+        </div>
+
+        <div class="swiper w-full h-full absolute left-0 top-0 z-40 opacity-0">
+
+            <div class="swiper-wrapper">
+
+                <section class="swiper-slide w-full h-full flex flex-col justify-end relative p-[5vw]">
+
+                    <div id="inner-1"
+                        class="flex flex-col items-start gap-4 lg:gap-8 w-full sm:w-2/3 lg:w-1/3 3xl:w-1/4 md:text-lg">
+                        <h1 class="text-[clamp(26px,4vw,60px)] leading-none font-light uppercase">
+                            Datsun
+                            <br class="hidden lg:block" />
+                            <span class="font-bold">240K GT</span>
+                        </h1>
+
+                        <p>
+                            Introducing a Masterpiece, the combination of all Datsun’s great automotive innovations.
+                        </p>
+
+                        <strong class="hidden lg:block">
+                            From 30,500 €
+                        </strong>
+
+                        <div class="flex flex-wrap gap-2">
+                            <a href="#section-2" data-slide-to="1"
+                                class="uppercase px-6 py-3 md:px-12 md:py-4 rounded-full text-xs md:text-base tracking-wider text-slate-50 bg-blue-700 hover:bg-blue-600 active:bg-blue-900 transition-colors grow text-center">
+                                Learn more
+                            </a>
+                            <a href="https://github.com/sahilkumardhala/" target="_blank" rel="noopener"
+                                class="uppercase px-6 py-3 md:px-12 md:py-4 rounded-full text-xs md:text-base tracking-wider bg-transparent hover:bg-slate-50/50 active:bg-white transition-colors grow text-center">Contact
+                                us</a>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section
+                    class="swiper-slide w-full h-full flex flex-col items-end justify-end lg:justify-center relative z-50 px-[5vw] py-[5vh]">
+
+                    <div id="inner-2"
+                        class="flex flex-col items-start gap-5 lg:gap-8 w-full sm:w-2/3 lg:w-1/3 2xl:w-1/4 p-[2.5vw] mb-8 lg:mb-0 sm:box-content rounded-xl sm:rounded-[2vw] md:text-lg text-slate-50 bg-zinc-900/20 backdrop-blur-lg">
+                        <h2 class="text-[clamp(22px,3vw,36px)] leading-[110%]">
+                            A compact car with an exceptional power-to-weight ratio
+                        </h2>
+
+                        <p class="mb-10 lg:mb-7">
+                            In addition to all the usual Datsun free extra, the 240K gives you ultimate refinements like
+                            electric rear window defroster; adjustable tilt steering wheel.
+                        </p>
+
+                        <a href="#section-3" data-slide-to="2"
+                            class="uppercase px-12 py-4 rounded-full text-xs md:text-base tracking-wider text-slate-50 bg-blue-700 hover:bg-blue-600 active:bg-blue-900 transition-colors absolute bottom-0 translate-y-1/2">
+                            Personalise
+                        </a>
+                    </div>
+
+                </section>
+
+                <section class="swiper-slide w-full h-full flex flex-col items-center relative px-[5vw] py-[5vh]">
+
+                    <div id="inner-3"
+                        class="relative z-50 flex flex-col items-center gap-4 text-white drop-shadow-[0_2px_3px_rgba(0,0,0,0.9)]">
+                        <h4 class="text-[clamp(22px,3vw,36px)]">
+                            Paint
+                        </h4>
+                        <div class="flex gap-8">
+                            <button aria-label="White" data-color="#CBD5E1"
+                                class="active relative rounded-full w-[40px] h-[30px] bg-gradient-to-r from-slate-50 to-slate-500 bg-slate-200 outline-0 hover:scale-110 focus:scale-110 transition-all"></button>
+                            <button aria-label="Blue" data-color="#355F99"
+                                class="relative rounded-full w-[40px] h-[30px] bg-gradient-to-r from-blue-500 to-blue-900 bg-blue-700 outline-0 hover:scale-110 focus:scale-110 transition-all"></button>
+                            <button aria-label="Red" data-color="#923939"
+                                class="relative rounded-full w-[40px] h-[30px] bg-gradient-to-r from-red-400 to-red-800 bg-red-600 outline-0 hover:scale-110 focus:scale-110 transition-all"></button>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <picture class="absolute left-0 top-1/2 w-full h-full z-0 opacity-0">
+            <source
+                srcSet="https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/bg-road-3000.jpg?v=1674210862901"
+                media="(min-width: 2000px)" />
+            <source
+                srcSet="https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/bg-road-2000.jpg?v=1674210859490, https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/bg-road-3000.jpg?v=1674210862901 2x"
+                media="(min-width: 1000px)" />
+            <source
+                srcSet="https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/bg-road-1000.jpg?v=1674210857284, https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/bg-road-2000.jpg?v=1674210859490 2x"
+                media="(min-width: 500px)" />
+            <img class="w-full h-full object-cover"
+                srcSet="https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/bg-road-1000.jpg?v=1674210857284 2x"
+                src="https://cdn.glitch.global/ccaf12bb-59b0-46bb-bd74-b9467ca22e3d/bg-road-500.jpg?v=1674211189312"
+                alt="Landscape" />
+        </picture>
+
+    </div>
+   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js'></script>
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

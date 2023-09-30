@@ -1,0 +1,30 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+model-viewer {
+    --poster-color: #e2e8f0;
+    --progress-bar-color: rgba(30, 41, 59, .5);
+    --progress-bar-height: 10px;
+}
+
+[data-color]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: -5px;
+    border: 2px solid transparent;
+    border-radius: 999px;
+}
+
+[data-color].active::before,
+[data-color]:focus::before {
+    border-color: white;
+}
+
